@@ -1,0 +1,578 @@
+@charset "utf-8";
+ul,li{list-style: none;}
+@charset "utf-8";
+html,body,div,p,form,label,ul,li,dl,dt,dd,ol,img,button,b,em,strong,small,h1,h2,h3,h4,h5,h6{margin:0;padding:0;border:0;list-style:none;font-style:normal;}
+body{height:100%;font-family:SimHei,'Helvetica Neue',Arial,'Droid Sans',sans-serif;font-size:14px;color:#333;}
+a, a.link{color:#666;text-decoration:none;font-weight:500;}
+a, a.link:hover{color:#666;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+body{
+	margin:0px;
+	padding: 0px;
+	font-family: 'Ping-Fang-SC-Regular'
+}
+.content .mint-cell:last-child,.payMethosContent .mint-cell:last-child{background-image:none;}
+.main,.payMethosContent,.studyBody,.allSortContent,.schoolCulture,.myOder,.scNoAddContent,.shoppingCartContent{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	position: fixed;
+	background: #efeff4;
+}
+.relContent{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background: #efeff4;
+}
+.main .mint-cell-wrapper .mint-cell-value{
+	color:#333333 !important;
+}
+.main .mint-button--large,.payMethosContent .mint-button--large{
+	width: calc(100% - 40px);
+	margin: 10px auto;
+
+
+}
+.main .content .onSave,.payMethosContent .payButton{
+	background: #32ba7c;
+	color: #fff;
+}
+.main .content .cancle{
+	background: #ffffff;
+	color: #666666;
+}
+
+/*支付方式页面*/
+.payMethosContent .mint-radio-input:checked + .mint-radio-core{
+	background-image: url(../image/selected.png);
+	background-size:20px 20px;
+	border-color:#32ba7c;
+	background-position: -1px;
+	background-color:#32ba7c;
+}
+.payMethosContent .mint-radio-core::after{
+	width: 0px;
+	height: 0px;
+}
+.payMethosContent .mint-cell-wrapper{
+	background-image: none;
+}
+.payMethosContent .mint-radiolist .mint-cell:nth-child(2){
+	border-bottom: 1px solid #f6f6f6;
+}
+.payMethosContent .title{
+	margin:26px 24px 0;
+	color:#999999;
+}
+
+.ListContent{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.schoolCulture .ListContent  img{
+	margin-left: 15px;
+	width: calc(100%/3 - 15px);
+	float: left
+}
+.studyBody .ListContent  img{
+	float: left;
+	margin: 5px
+}
+.studyBody  .itemContent{
+	width: calc(100% - 160px);
+	overflow: hidden;
+	float: left;
+}
+.studyBody  .myDonate{
+	width: calc(100% - 180px);
+	overflow: hidden;
+	float: left;
+}
+.ListContent .itemContent p{
+	line-height: 25px;
+	color: #353535;
+	font-size:14px;
+	margin-left: 8px;
+	height: 25px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.ListContent .itemContent p:nth-child(2){
+	color:#666666;
+	font-size: 13px;
+}
+.ListContent .cancleCollect button{
+	border-style: none;
+	width: 78px;
+	height: 30px;
+	border:1px solid #32ba7c;
+	color: #32ba7c;
+	background:#fff;
+	border-radius: 3px;
+	padding:5px 10px;
+	margin-top: 15px;
+	float: left;
+}
+.ListContent .cancleCollect button:focus{
+	outline:none;
+}
+.ListContent .getMoney{
+	margin-top: 25px;
+	color: #32ba7c;
+	font-size: 13px;
+}
+.studyBody .mint-navbar .mint-tab-item.is-selected{
+	border-bottom: 2px solid #32ba7c;
+	color: #353535;
+}
+.studyBody .mint-tab-item-label{
+	font-size: 16px;
+}
+.studyBody .mint-tab-container{
+	margin-top: 10px;
+}
+.studyBody .mint-tab-container{
+	background: #fff;
+	border-bottom:1px solid #f6f6f6;
+}
+.schoolCulture .mint-navbar .mint-tab-item.is-selected{
+  border-bottom: 2px solid#32ba7c;
+  color: #353535;
+}
+
+.schoolCulture .mint-tab-item-label{
+  font-size: 16px;
+}
+.schoolCulture .mint-tab-container{
+  margin-top: 10px;
+  height: 100%;
+}
+.schoolCulture .mint-tab-container{
+  background: #fff;
+  /*border-bottom:1px solid #f6f6f6;*/
+}
+/*全部分类*/
+.allSortContent{
+	position: fixed;
+	overflow: auto;
+}
+.allSortContent>ul,.allSortContent>div>ul{
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	height: auto;
+}
+.allSortContent>ul>li,.allSortContent>div>ul>li{
+	float: left;
+}
+.allSortContent .sortContent .sortItem{
+	width:90px;
+	height: 100%;
+	background: #fff;
+	position: fixed;
+	background: cover;
+	overflow: auto;
+}
+.allSortContent .sortItem .show{
+	background: #efeff4;
+}
+.allSortContent .sortItem .hidden{
+	background: #fff;
+}
+.allSortContent .sortContent .sortItem div{
+	height: 50px;
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	line-height: 50px;
+	border-bottom: 1px solid #f6f6f6;
+}
+.allSortContent .sortContent .content{
+	width: calc(100% - 90px);
+	float: left;
+	margin-left: 90px;
+}
+.allSortContent .sortContent .content img{
+	width: 75px;
+	height: 100px;
+
+
+}
+.allSortContent .sortContent .content>div{
+	height: auto;
+	margin:20px 0px 0px 15px;
+	color: #666666;
+	text-align: center;
+	width: 75px;
+	float:left;
+	max-height: 135px;
+	font-size:12px;
+}
+.allSortContent .sortContent .content>div p{
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+}
+.allSortContent .back img{
+	width: 12px;
+	margin:5px 20px 0px 15px;
+	height: 22px;
+}
+.allSortContent .search{
+	width: calc(100% - 70px);
+	height: 30px;
+	background: #efeff4;
+	padding: 5px 10px 10px 0px;
+	border-radius: 20px;
+	margin-bottom: 5px;
+	margin-right: 10px;
+
+}
+.allSortContent .search img {
+	width: 16px;
+	height:16px;
+	float: left;
+	margin-left: 5px;
+}
+.allSortContent .search input{
+	width: calc(100% - 40px);
+	height: 100%;
+	float: left;
+	border:0px;
+	background:#efeff4;
+	font-size: 12px;
+
+}
+input::-webkit-input-placeholder {
+	color: #c8c8c8;
+}
+.allSortContent .search input:focus{
+	outline: none
+}
+
+/*购物车未选择地址页面*/
+.scNoAddContent .selectAdd{
+	width: calc(100% - 60px);
+	background:#fbfafc;
+	margin: 10px auto;
+}
+.scNoAddContent{
+	height: calc(100% - 50px)!important;
+	overflow: auto;
+}
+.scNoAddContent .goodsImg img{
+	height:120px;
+	float: left;
+	width: 100px;
+	padding: 15px;
+}
+.scNoAddContent .goodsInfo{
+	width: calc(100% - 100px);
+	float: left;
+	line-height: 20px;
+}
+.scNoAddContent .goodsInfo .name{
+	font-size: 13px;
+	color: #333333;
+}
+.scNoAddContent .goodsInfo span{
+	font-size: 12px;
+	color: #999999;
+}
+.scNoAddContent>div{
+	background: #fff;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	border-bottom: 1px solid #f6f6f6;
+}
+.scNoAddContent .goodsInfo .name{
+	padding-top:13px;
+}
+.scNoAddContent .goodsInfo .totalInfo{
+	margin-top: 15px
+}
+.scNoAddContent .goodsInfo .name span{
+	margin-right: 18px;
+	float: right
+}
+.scNoAddContent .goodsInfo .cost{
+	font-size: 12px;
+}
+.scNoAddContent .goodsInfo .cost span:last-child{
+	margin-left: 15px;
+}
+.scNoAddContent .totalPayInfo{
+	height: 43px;
+	float: right;
+	padding-right: 10px;
+}
+.scNoAddContent .totalPayInfo li{
+	float: left;
+	line-height: 43px;
+	padding-right: 10px;
+	font-size: 12px;
+	color: #5a5a5a;
+}
+.scNoAddContent .totalPayInfo li:last-child span:first-child{
+	font-size: 15px;
+	color: #333333;
+}
+.scNoAddContent .totalPayInfo li:last-child span:last-child{
+	font-size: 15px;
+	color: #ff6600;
+}
+.scNoAddContent .useEB, .scNoAddContent .note{
+	float: right;
+	width: 100%;
+	text-align: right;
+	padding: 10px 20px 10px 10px;
+}
+.scNoAddContent .useEB{
+	font-size: 15px;
+	color: #333333;
+}
+.scNoAddContent .useEB input{
+	width: 28px;
+	height: 28px;
+	background: #f6f6f6;
+	border:1px solid #f6f6f6;
+	text-align: center;
+}
+.scNoAddContent .useEB input:focus{
+	outline: none;
+
+}
+.scNoAddContent .note{
+	font-size: 12px;
+	color: #9b9b9b;
+}
+.scNoAddContent .deliveryType img{
+	width: 10px;
+	height: 18px;
+	margin-right: 15px;
+	margin-left: 2px;
+}
+.scNoAddContent .leaveMessage .mint-cell-wrapper{
+	background-image: none;
+}
+ .sendOeder .mint-tabbar{
+	background-image:none;
+}
+ .sendOeder {
+	background:#ffffff;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 100%;
+	height: 50px;
+}
+.sendOeder>ul>li{
+	float: right;
+}
+.sendOeder button{
+	float: right;
+	width:130px;
+	height: 50px;
+	background:#32ba7c;
+	color: #fff;
+}
+.sendOeder>ul>li p{
+	line-height: 18px;
+	padding-right: 10px;
+}
+.sendOeder>ul>li p:first-child{
+	font-size: 14px;
+	color: #333333;
+	margin-top: 8px;
+}
+.sendOeder>ul>li p:last-child{
+	font-size: 14px;
+	color: #32ba7c;
+}
+.scNoAddContent .selectAdd img{
+	width: 12px;
+	height: 20px;
+}
+
+/*购物车页面*/
+.shoppingCartContent .goodsInfo{
+	width: calc(100% - 130px) !important;
+}
+
+.shoppingCartContent .checkBox{
+	width: 20px;
+	margin-top: 50px;
+	margin-left: 10px;
+	float: left;
+}
+.shoppingCartContent .header{
+	color: #333333;
+	font-size: 15px;
+	background:#efeff4;
+}
+.shoppingCartContent .header>ul{
+	padding:10px;
+}
+.shoppingCartContent .header span:last-child{
+	float: right;
+	padding-right: 30px;
+}
+.shoppingCartContent .selecteAll{
+	width: 20px;
+	float: left;
+  margin-right: 15px;
+}
+.shoppingCartContent .goodsInfo .selectedType,
+.shoppingCartContent .goodsInfo .cost span{
+	font-size: 12px;
+	color: #9b9b9b;
+}
+.shoppingCartContent .goodsInfo .cost{
+	color: #ff6600;
+	font-size: 14px;
+}
+.shoppingCartContent .goodsInfo .cost{
+	padding-top: 6px;
+}
+.shoppingCartContent .btn-numbox{
+	margin-top: 0px !important;
+	padding-left: 0px !important;
+}
+.shoppingCartContent .btn-numbox>li:first-child{
+	line-height: 15px;
+}
+.myOder{
+  height: calc(100% - 50px)!important;
+  overflow: auto;
+}
+.myOder.odermoney{
+  width: 63px;
+  height: 97px;
+  float: left;
+  padding: 15px;
+}
+.myOder .goodsInfo{
+  width: calc(100% - 100px);
+  float: left;
+  line-height: 22px;
+}
+.myOder.goodsInfo.odermoney{
+  color: red;
+}
+/**
+搜索结果
+ */
+.relContent>ul{
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  height: auto;
+}
+.relContent>ul>li{
+  float: left;
+}
+.relContent .sortContent .sortItem{
+  width:90px;
+  height: calc(100% - 40px);
+  background: #fff;
+  position: absolute;
+  background: cover;
+  overflow: auto;
+}
+.relContent .sortItem .show{
+  background: #efeff4;
+}
+.relContent .sortItem .hidden{
+  background: #fff;
+}
+.relContent .sortContent .sortItem div{
+  height: 50px;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  line-height: 50px;
+  border-bottom: 1px solid #f6f6f6;
+}
+.relContent .sortContent .content{
+  width: calc(100% - 90px);
+  float: left;
+  margin-left: 90px;
+}
+.relContent .sortContent .content img{
+  width: 75px;
+  height: 100px;
+
+
+}
+.relContent .sortContent .content>div{
+  height: auto;
+  margin:20px 0px 0px 15px;
+  color: #666666;
+  text-align: center;
+  width: 75px;
+  float:left;
+  max-height: 135px;
+  font-size:12px;
+}
+.relContent .sortContent .content>div p{
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space:nowrap;
+}
+.relContent .back img{
+  width: 12px;
+  margin:5px 20px 0px 15px;
+  height: 22px;
+}
+.relContent .search{
+  width: calc(100% - 70px);
+  height: 30px;
+  background: #efeff4;
+  padding: 5px 10px 10px 0px;
+  border-radius: 20px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+
+}
+.relContent .search img {
+  width: 16px;
+  height:16px;
+  float: left;
+  margin-left: 5px;
+}
+.relContent .search input{
+  width: calc(100% - 40px);
+  height: 100%;
+  float: left;
+  border:0px;
+  background:#efeff4;
+  font-size: 12px;
+  line-height: 40px;
+
+}
+input::-webkit-input-placeholder {
+  color: #c8c8c8;
+}
+.relContent .search input:focus{
+  outline: none
+}
+.relContent ul:first-child{
+  background: #fff;
+  border-bottom:1px solid #f6f6f6;
+  padding-top:5px;
+}
+.relContent.resultContent{
+  float: left;
+  margin-left: 15px;
+}
+
+.donateDialog{font-size:14px !important}
+.myInfo .mint-cell-wrapper{border-bottom: 1px solid #d9d9d9}
+

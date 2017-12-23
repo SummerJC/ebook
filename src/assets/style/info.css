@@ -1,0 +1,300 @@
+@charset "utf-8";
+html,body,div,p,form,label,ul,li,dl,dt,dd,ol,img,button,b,em,strong,small,h1,h2,h3,h4,h5,h6{margin:0;padding:0;border:0;list-style:none;font-style:normal;}
+body{height:100%;font-family:SimHei,'Helvetica Neue',Arial,'Droid Sans',sans-serif;font-size:14px;color:#333;}
+a, a.link{color:#666;text-decoration:none;font-weight:500;}
+a, a.link:hover{color:#666;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+.bookInfoContent,.commodityInfo{
+    height: calc(100% - 50px)!important;
+    overflow: auto;
+}
+
+.commodityInfo,.bookInfoContent{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: fixed;
+    background: #efeff4;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-family: 'Ping-Fang-SC-Regular';
+}
+
+ul,li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.btn-numbox {
+    overflow: hidden;
+    margin-top: 10px;
+    background:#fff; 
+    padding:6px 0;
+}
+
+.btn-numbox li {
+    float: left;
+}
+
+.btn-numbox li .number,
+.kucun {
+    display: inline-block;
+    font-size: 14px;
+    color: #666666;
+    vertical-align: sub;
+}
+
+.btn-numbox .count {
+    overflow: hidden;
+    
+}
+
+.btn-numbox .count .num-jian,
+.input-num,
+.num-jia {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 15px;
+    color: #999;
+    cursor: pointer;
+    border: 1px solid #e6e6e6;
+}
+
+.btn-numbox .count .input-num {
+    width: 40px;
+    height: 25px;
+    color: #333;
+    border-left: 0;
+    border-right: 0;
+}
+/*商品详情*/
+.commodityInfo .imgInfo,.bookInfoContent .imgInfo{
+    width: 100%;
+    height: 180px;
+    background: #fff;
+}
+.commodityInfo .imgInfo img,.bookInfoContent .imgInfo img{
+    display: block;
+    height:160px;
+    margin: 0px auto;
+    padding-top: 10px;
+}
+.commodityInfo .mint-cell,.bookInfoContent .mint-cell{
+    min-height:35px;
+    
+}
+.commodityInfo .mint-cell-wrapper,.bookInfoContent .mint-cell-wrapper{
+    background-image: none;
+}
+.commodityInfo .mint-cell:nth-child(2) img,
+.bookInfoContent .mint-cell:nth-child(2) img{
+    width: 22px;
+    margin-right:5px;
+}
+.commodityInfo .money{
+    color:#ff2929;
+    font-size: 14px;
+}
+.commodityInfo .mint-cell:nth-child(2),.bookInfoContent .mint-cell:nth-child(2){
+    font-size: 15px;
+    box-shadow: 0 -2px 0 #efeff4;
+}
+.commodityInfo .mint-cell:nth-child(4){
+    color: #666666;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+.commodityInfo .btn-numbox{
+    padding-left: 10px;
+}
+/*图书详情页*/
+.bookInfoContent .bookInfoMoney{
+    width:100%;
+    height: 35px;
+    background:#fff;
+    padding:10px 0 0 15px;
+    font-size: 14px;
+    color:#ff2929;
+}
+.bookInfoContent .bookInfoMoney span{
+    font-size: 12px;
+    color: #333333;
+    padding-left:10px;
+}
+.bookInfoContent .comment{
+    width: 100%;
+    background:#ffffff;
+    padding-bottom: 12px;
+}
+.bookInfoContent .comment li{
+    width: calc(100% - 30px);
+    height: auto;
+    background: #fff7e4;
+    color:#9e781f;
+    margin:0 auto;
+}
+.bookInfoContent .comment li p{
+    padding:15px 10px;
+}
+.bookInfoContent .bookInfo{
+    margin-top: 12px;
+    background:#fff;
+}
+.bookInfoContent .bookInfo li{
+    padding: 5px 20px;
+    color:#666666;
+}
+.bookInfoContent .btn-numbox>li{
+    padding-left: 8px;
+    line-height: 20px;
+}
+.bookInfoContent .someComment{
+    color: #666666;
+    font-size: 12px;
+}
+.bookInfoContent .someComment li{
+    padding: 8px 20px;
+}
+.bookInfoContent .btn-numbox{
+    padding-left: 10px;
+}
+ .actionButton{
+    width: 100%;
+    height: 50px;
+    bottom: 0px;
+    position: absolute;
+}
+ .actionButton button{
+    width: 50%;
+    border:none;
+    border-style: none;
+    float: left;
+    padding: 0px;
+    margin:0px;
+    color: #fff;
+    text-align: center;
+    height: 50px;
+}
+ .actionButton button:first-child{
+    background:#32ba7c;
+}
+.actionButton button:last-child{
+    background:#37373b;
+}
+ .actionButton button span{
+    width: 100%;
+    font-size: 12px;
+    display: block;
+ }
+.donation{
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    z-index: 100;
+}
+ .donation .note {
+    width: 100%;
+    overflow: hidden;
+ }
+.donation .note .mint-cell{
+    width: 40%;
+    float: left;
+    background:none;
+}
+.donation .mint-cell-wrapper{
+    background: none;
+}
+.donation .twoButton{
+    width: 100%;
+    height: 30px;
+}
+.donation .note .mint-radiolist-title{
+    color: #000;
+    line-height: 35px;
+    font-size: 14px;
+    float: left;
+}
+.donation .twoButton button{
+    width: 50%;
+    float: left;
+    line-height: 35px;
+    color: #fff;
+}
+.donation .twoButton button:first-child{
+    background:#32ba7c;
+}
+.donation .twoButton button:last-child{
+    background:#37373b;
+}
+.donation .mint-radio-label,
+.donation .cell-right{
+    font-size:14px !important;
+}
+.donation .mint-field .mint-cell-title{
+    width: 55px;
+}
+
+.myshopCart{
+    z-index: 100;
+    position: fixed;
+    bottom: 100px;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: #fff;
+    border:1px solid #32ba7c;
+}
+.myshopCart img,
+.myshopCartB img{
+    width: 35px;
+    margin:5px;
+}
+.myshopCartB{
+    z-index: 100;
+    position: fixed;
+    bottom: 160px;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: #fff;
+    border:1px solid #32ba7c;
+}
+/*首页图标*/
+
+.nav div{
+    width: 48%;
+    height: 49px;
+    margin:2%;
+    background: #fff;
+    float: left;
+    line-height: 49px;
+    display:block;
+}
+.nav div img{
+    float: left
+}
